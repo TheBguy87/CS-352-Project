@@ -51,21 +51,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2324}
+      Script: {instanceID: 2328}
     - Class: 114
-      Script: {instanceID: 2426}
+      Script: {instanceID: 2430}
     - Class: 114
-      Script: {instanceID: 2558}
+      Script: {instanceID: 2562}
     - Class: 114
-      Script: {instanceID: 2596}
+      Script: {instanceID: 2600}
     - Class: 114
-      Script: {instanceID: 3176}
+      Script: {instanceID: 3180}
     - Class: 114
-      Script: {instanceID: 3206}
+      Script: {instanceID: 3210}
     - Class: 114
-      Script: {instanceID: 3484}
+      Script: {instanceID: 3488}
     - Class: 114
-      Script: {instanceID: 4604}
+      Script: {instanceID: 4608}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -802,4 +802,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/temp
+  playerPath: C:/Users/TheBg/Documents/GitHub/CS-352-Project/Game
