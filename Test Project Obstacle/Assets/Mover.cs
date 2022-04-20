@@ -6,13 +6,15 @@ public class Mover : MonoBehaviour
 {
     Rigidbody rb;
     public Vector3 jump;
-    [SerializeField] float jumpForce = 12;
+    [SerializeField] float jumpForce = 9;
     float moveSpeed = 10f;
     bool isGrounded;
     int pad;
-    public float globalGravity = -3f;
-    [SerializeField] public float gravityScale = 3;
-    [SerializeField] public float fallingGravityScale = 5;
+    public float globalGravity = -7f;
+    [SerializeField] public float gravityScale = 4;
+    [SerializeField] public float fallingGravityScale = 15;
+
+    [SerializeField] public bool isJumping = false;
 
     // Start is called before the first frame update
     void Start()
@@ -27,10 +29,8 @@ public class Mover : MonoBehaviour
         isGrounded = true;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Vector3 gravity = globalGravity * gravityScale * Vector3.up;
+
+    void Update() {
 
         if(pad>0){pad--;  isGrounded = false;}
         float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
@@ -40,9 +40,20 @@ public class Mover : MonoBehaviour
         {
             if(pad == 0) {
                 pad = 5;
-                rb.AddForce(jump * jumpForce, ForceMode.Impulse);                        
-                isGrounded = false;
+                isJumping = true;
             }
+        }
+    }
+
+
+    // Update is called once per frame
+    void FixedUpdate()
+    {
+        Vector3 gravity = globalGravity * gravityScale * Vector3.up;
+        if(isJumping == true) {
+            isGrounded = false;
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse); 
+            isJumping = false;    
         }
         if(rb.velocity.y >= 0)
         {
@@ -54,5 +65,9 @@ public class Mover : MonoBehaviour
             gravity = globalGravity * fallingGravityScale * Vector3.up;
             rb.AddForce(gravity, ForceMode.Acceleration);
         }
+
+
     }
+
 }
+

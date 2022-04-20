@@ -4,9 +4,11 @@ ScriptsOnlyBuild:
     - HoldCharacter
     - LRPlatform
     - Mover
+    - Win
     Cinemachine.dll:
     - Cinemachine.CinemachineBrain
     - Cinemachine.CinemachineComposer
+    - Cinemachine.CinemachineOrbitalTransposer
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineTransposer
     - Cinemachine.CinemachineVirtualCamera
@@ -16,6 +18,12 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/Scenes/SampleScene.unity:
     - Class: 1
@@ -51,26 +59,48 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2328}
+      Script: {instanceID: 2046}
     - Class: 114
-      Script: {instanceID: 2430}
+      Script: {instanceID: 2218}
     - Class: 114
-      Script: {instanceID: 2562}
+      Script: {instanceID: 2238}
     - Class: 114
-      Script: {instanceID: 2600}
+      Script: {instanceID: 2326}
     - Class: 114
-      Script: {instanceID: 3180}
+      Script: {instanceID: 2362}
     - Class: 114
-      Script: {instanceID: 3210}
+      Script: {instanceID: 2428}
     - Class: 114
-      Script: {instanceID: 3488}
+      Script: {instanceID: 2494}
     - Class: 114
-      Script: {instanceID: 4608}
+      Script: {instanceID: 2560}
+    - Class: 114
+      Script: {instanceID: 2598}
+    - Class: 114
+      Script: {instanceID: 2670}
+    - Class: 114
+      Script: {instanceID: 2868}
+    - Class: 114
+      Script: {instanceID: 3178}
+    - Class: 114
+      Script: {instanceID: 3208}
+    - Class: 114
+      Script: {instanceID: 3486}
+    - Class: 114
+      Script: {instanceID: 4606}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -235,6 +265,12 @@ ScriptsOnlyBuild:
     assemblyName: Cinemachine.dll
     namespaceName: Cinemachine
     className: CinemachineOrbitalTransposer
+  - hash:
+      serializedVersion: 2
+      Hash: 4e88f8722592560782ceb36712029fc9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Win
   - hash:
       serializedVersion: 2
       Hash: 62824bb9557c7e987502f2fbd2a26819
@@ -459,7 +495,7 @@ ScriptsOnlyBuild:
     className: CinemachineSmoothPath
   - hash:
       serializedVersion: 2
-      Hash: 0f3db24d5ba5cf29e6c7b5354734fbe3
+      Hash: 63d2122623583cbf38514262c6699980
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Mover
@@ -802,4 +838,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/TheBg/Documents/GitHub/CS-352-Project/Game
+  playerPath: C:/Users/TheBg/Documents/GitHub/CS-352-Project/Game/Build
