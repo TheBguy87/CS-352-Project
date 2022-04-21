@@ -838,4 +838,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/TheBg/Documents/GitHub/CS-352-Project/Game
+  playerPath: C:/Users/TheBg/Documents/GitHub/CS-352-Project/Final Game
