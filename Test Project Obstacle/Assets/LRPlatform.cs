@@ -1,25 +1,9 @@
-// using System.Collections;
-// using System.Collections.Generic;
-// using UnityEngine;
-
-// public class LRPlatform : MonoBehaviour
-// {
-//     [SerializeField] float xValue = .0001f;
-
-//     // Start is called before the first frame update
-//     void Start()
-//     {
-        
-//     }
-
-//     // Update is called once per frame
-//     void FixedUpdate()
-//     {
-
-//         transform.Translate(xValue, 0, 0);
-//     }
-
-// }
+/* CS 352 Project: Rise Up
+ * LRPlatform.cs
+ * 
+ * Brian Langejans And Chris Jeong
+ * Date: 4/15/2022
+ */
 
  using UnityEngine;
  using System.Collections;
@@ -35,16 +19,15 @@
      public float smooth;
      public float resetTime;
  
-     // Use this for initialization
      void Start () {
          ChangeTarget();
      }
      
-     // Update is called once per frame
      void FixedUpdate () {
          LR_Platform.position = Vector3.Lerp (LR_Platform.position, newPosition, smooth * Time.deltaTime);
      }
  
+ // Handle moving positions
      void ChangeTarget () {
          if(currentState == "Moving To Position 1")
          {

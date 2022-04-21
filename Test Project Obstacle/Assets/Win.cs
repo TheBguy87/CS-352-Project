@@ -1,3 +1,10 @@
+/* CS 352 Project: Rise Up
+ * Win.cs
+ * 
+ * Brian Langejans And Chris Jeong
+ * Date: 4/15/2022
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +21,7 @@ public class Win : MonoBehaviour
     private float timeToAppear = 1;
     private void OnTriggerEnter(Collider collider) {
         textElement.text = textValue;
+        // set disappear time for the text
         disappearTime = Time.time + timeToAppear;
 
     }
@@ -22,6 +30,7 @@ public class Win : MonoBehaviour
     {
         if (textElement.enabled && (Time.time >= disappearTime)) {
             textElement.enabled = false;
+            // load back to the beginning
             SceneManager.LoadScene(0);
         }
     }

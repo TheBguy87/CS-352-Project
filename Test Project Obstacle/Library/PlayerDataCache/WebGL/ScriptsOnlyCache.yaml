@@ -495,7 +495,7 @@ ScriptsOnlyBuild:
     className: CinemachineSmoothPath
   - hash:
       serializedVersion: 2
-      Hash: 63d2122623583cbf38514262c6699980
+      Hash: d1ef9f820d65ee4ea7104e75df641793
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Mover
@@ -838,4 +838,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/TheBg/Documents/GitHub/CS-352-Project/Game/Build
+  playerPath: C:/Users/TheBg/Documents/GitHub/CS-352-Project/Game/Build/Build
