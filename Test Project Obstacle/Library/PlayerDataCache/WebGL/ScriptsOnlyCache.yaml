@@ -14,6 +14,17 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachineVirtualCamera
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.Timeline.Editor.dll:
+    - TimelineProjectSettings
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnimatorStateTransitionInspector
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -50,47 +61,57 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
     - Class: 89
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2046}
+      Script: {instanceID: 2052}
     - Class: 114
-      Script: {instanceID: 2218}
+      Script: {instanceID: 2226}
     - Class: 114
-      Script: {instanceID: 2238}
+      Script: {instanceID: 2248}
     - Class: 114
-      Script: {instanceID: 2326}
+      Script: {instanceID: 2338}
     - Class: 114
-      Script: {instanceID: 2362}
+      Script: {instanceID: 2372}
     - Class: 114
-      Script: {instanceID: 2428}
+      Script: {instanceID: 2438}
     - Class: 114
-      Script: {instanceID: 2494}
+      Script: {instanceID: 2504}
     - Class: 114
-      Script: {instanceID: 2560}
+      Script: {instanceID: 2572}
     - Class: 114
-      Script: {instanceID: 2598}
+      Script: {instanceID: 2610}
     - Class: 114
-      Script: {instanceID: 2670}
+      Script: {instanceID: 2684}
     - Class: 114
-      Script: {instanceID: 2868}
+      Script: {instanceID: 2882}
     - Class: 114
-      Script: {instanceID: 3178}
+      Script: {instanceID: 3198}
     - Class: 114
-      Script: {instanceID: 3208}
+      Script: {instanceID: 3228}
     - Class: 114
-      Script: {instanceID: 3486}
+      Script: {instanceID: 3506}
     - Class: 114
-      Script: {instanceID: 4606}
+      Script: {instanceID: 4642}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 137
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -243,7 +264,7 @@ ScriptsOnlyBuild:
     className: Text
   - hash:
       serializedVersion: 2
-      Hash: f1d735cc1a21c3704ab52568f4fbfcf8
+      Hash: 91d258529db2b5060a913f2afcea1a21
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
     className: PlaymodeTestsController
@@ -838,4 +859,4 @@ ScriptsOnlyBuild:
   platform: 20
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/TheBg/Documents/GitHub/CS-352-Project/Game/Build/Build
+  playerPath: C:/Users/Chris Jeong/Desktop/CS-352/CS-352-Project-main/Final Build

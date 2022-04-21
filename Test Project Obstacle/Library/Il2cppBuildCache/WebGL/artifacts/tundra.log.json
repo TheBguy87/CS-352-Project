@@ -1,6 +1,8 @@
 {"msg":"init","dagFile":"artifacts\\tundra.dag","targets":[]}
 {"msg":"enqueueNode","enqueuedNodeAnnotation":"all_tundra_nodes","enqueuedNodeIndex":0}
-{"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteResponseFile artifacts/rsp/9469893277947817554.rsp","enqueuedNodeIndex":1,"enqueueingNodeAnnotation":"all_tundra_nodes","enqueueingNodeIndex":0}
-{"msg":"enqueueNode","enqueuedNodeAnnotation":"Il2Cpp C:/Users/TheBg/Documents/GitHub/CS-352-Project/Test Project Obstacle/Library/Il2cppBuildCache/WebGL/Native/build.bc","enqueuedNodeIndex":2,"enqueueingNodeAnnotation":"all_tundra_nodes","enqueueingNodeIndex":0}
-{"msg":"inputSignatureChanged","annotation":"Il2Cpp C:/Users/TheBg/Documents/GitHub/CS-352-Project/Test Project Obstacle/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"changes":[{"key":"InputFileDigest","path":"C:\\Users\\TheBg\\Documents\\GitHub\\CS-352-Project\\Test Project Obstacle\\Temp\\StagingArea\\Data\\Managed\\Assembly-CSharp.dll","dependency":"explicit"},{"key":"InputFileDigest","path":"C:\\Users\\TheBg\\Documents\\GitHub\\CS-352-Project\\Test Project Obstacle\\Temp\\StagingArea\\Data\\Managed\\UnityEngine.CoreModule.dll","dependency":"explicit"}]}
-{"msg":"noderesult","annotation":"Il2Cpp C:/Users/TheBg/Documents/GitHub/CS-352-Project/Test Project Obstacle/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"exitcode":0}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"WriteResponseFile artifacts/rsp/7965834943187063406.rsp","enqueuedNodeIndex":1,"enqueueingNodeAnnotation":"all_tundra_nodes","enqueueingNodeIndex":0}
+{"msg":"enqueueNode","enqueuedNodeAnnotation":"Il2Cpp C:/Users/Chris Jeong/Desktop/CS-352/CS-352-Project-main/Test Project Obstacle/Library/Il2cppBuildCache/WebGL/Native/build.bc","enqueuedNodeIndex":2,"enqueueingNodeAnnotation":"all_tundra_nodes","enqueueingNodeIndex":0}
+{"msg":"newNode","annotation":"WriteResponseFile artifacts/rsp/7965834943187063406.rsp","index":1}
+{"msg":"noderesult","annotation":"WriteResponseFile artifacts/rsp/7965834943187063406.rsp","index":1,"exitcode":0}
+{"msg":"newNode","annotation":"Il2Cpp C:/Users/Chris Jeong/Desktop/CS-352/CS-352-Project-main/Test Project Obstacle/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2}
+{"msg":"noderesult","annotation":"Il2Cpp C:/Users/Chris Jeong/Desktop/CS-352/CS-352-Project-main/Test Project Obstacle/Library/Il2cppBuildCache/WebGL/Native/build.bc","index":2,"exitcode":0}

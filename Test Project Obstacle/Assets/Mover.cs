@@ -22,8 +22,8 @@ public class Mover : MonoBehaviour
     public float globalGravity = -7f;
     [SerializeField] public float gravityScale = 4;
     [SerializeField] public float fallingGravityScale = 15;
-
     [SerializeField] public bool isJumping = false;
+    private Animator animator;
 
 
     // Start is called before the first frame update
@@ -33,6 +33,7 @@ public class Mover : MonoBehaviour
         rb.useGravity = false;
         jump = new Vector3(0.0f, 2.0f, 0.0f);
         isGrounded = true;
+        animator = GetComponent<Animator>();
     }
 
     void OnCollisionStay() {
@@ -49,7 +50,9 @@ public class Mover : MonoBehaviour
         // move the user depending on direction
         Vector3 movementDirection = new Vector3(inputHoriz, 0, inputVert);
         movementDirection.Normalize();
-        transform.Translate(movementDirection * Time.deltaTime * moveSpeed, Space.World);
+        var translation = (movementDirection * Time.deltaTime * moveSpeed);
+        transform.Translate(translation, Space.World);
+        
 
         // handle looking in different directions
         // help from: https://www.youtube.com/watch?v=BJzYGsMcy8Q&t=431s
@@ -67,6 +70,8 @@ public class Mover : MonoBehaviour
                 isJumping = true;
             }
         }
+        var plswork= (inputHoriz + inputVert);
+        animator.SetBool("isMoving", plswork != 0);
     }
 
 // fixed update that updates jumping physics
